@@ -1,0 +1,258 @@
+body {
+	background-image:url("backgroundEditado.jpg");
+	background-size:1280px;
+}
+
+header {
+	padding:20px 0;
+}
+
+.cabecalho {
+	position:relative;
+	margin:0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-family:"Corben", cursive;
+	color:#9AAFAF;
+	font-size:32px;
+	letter-spacing:0.7em;
+	margin:80px 250px 10px;
+	padding-bottom:20px;
+	border-bottom:1px solid #9AAFAF;
+}
+
+h2 {
+	width:80%;
+	font-family:"lucida sans unicode", cursive;
+	font-weight:bold;
+	text-align:center;
+	font-size:70px;
+	letter-spacing:0.4em;
+	text-transform:uppercase;
+	color:#9AAFAF;
+	margin:50px auto 0;
+
+}
+
+.banner {
+	position:absolute;
+	top:10%;
+	left:50%;
+	transform:translateX(-50%);
+	z-index:-1;
+	opacity: 0.8;
+}
+
+.menu {
+	position:relative;
+	text-align:center;
+	width:1220px;
+	margin:100px auto 0;
+}
+
+.menu ul {
+	width: 1220px;
+	margin:150px auto 0;
+	padding-top: 30px;
+    border-top: 1px dashed #9AAFAF;
+}
+
+.menu li {
+	display:inline-block;
+	margin:0 22px;
+}
+
+.menu a {
+	color:#F7F7F7;
+	font-size:22px;
+	background:#808080;
+	padding:3px 20px 3px 20px;
+	border-color:#A2A2A2;
+	border-style: solid;
+	border-bottom-width:3px;
+	border-left:none;
+	border-right:none;
+	border-radius:0 50px 50px 0;
+	text-decoration:none;
+}
+
+.menu a:hover {
+	border:2px solid #9AAFAF;
+	background:#9AAFAF;
+	cursor:pointer;
+	transition:0.2s;
+}
+
+#home-menu {
+	padding:3px 66px 3px 66px;
+}
+
+#cardapio-menu {
+	padding:3px 49px 3px 49px;
+}
+
+#contato-menu {
+	padding:3px 52px 3px 52px;
+}
+
+.section-cardapio {
+	position: relative;
+	margin: 0 0 0 20%;
+	width: 600px;
+}
+
+.cardapio {
+	display: inline-block;
+	position:relative;
+	left:25%;
+	width:270px;
+
+}
+
+.cardapio nav {
+	padding: 100px 0 50px 0;
+}
+
+.fotos-cardapio {
+	display: inline-block;
+	position: relative;
+	right: 300px;
+	top: 10px;
+	width: 270px;
+	height: 600px;
+}
+
+#img-honesto {
+	width:58%;
+	position:relative;
+	clip-path: ellipse(50% 50%);
+}
+
+#img-honesto:hover {
+	transform:scale(1.1);
+	cursor:pointer;
+	transition:0.2s;
+}
+
+#img-melaco {
+	width:70%;
+	position:relative;
+	right:17px;
+	clip-path: ellipse(40% 45%);
+}
+
+#img-melaco:hover {
+	transform:scale(1.1);
+	cursor:pointer;
+	transition:0.2s;
+}
+
+#img-veggie {
+	width:57%;
+	position:relative;
+	clip-path: ellipse(50% 45%);
+}
+
+#img-veggie:hover {
+	transform:scale(1.1);
+	cursor:pointer;
+	transition:0.2s;
+}
+
+.cardapio li {
+	margin:0 0 30px 0;
+}
+
+.cardapio a {
+	font-size:72px;
+	font-weight:bold;
+	line-height: 55px;
+	font-family: 'Anton', sans-serif;
+	margin-bottom: 150px;
+	text-decoration:none;
+}
+
+.honesto {
+	color:#668787;
+}
+
+.honesto:hover {
+	font-size:75px;
+	transition:0.2s;
+}
+
+.melaco {
+	color:#9AAFAF;
+}
+
+.melaco:hover {
+	font-size:75px;
+	transition:0.2s;
+}
+
+.veggie {
+	color:#C5D7D7;
+}
+
+.veggie:hover {
+	font-size:75px;
+	transition:0.2s;
+}
+
+
+footer {
+	padding:20px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color:#C5D7D7;
+}
+
+.endereco > p:first-child {
+	text-transform: uppercase;
+}
+
+.endereco {
+	display:inline-block;
+	width:190px;
+	vertical-align: top;
+	line-height: 1.2;
+	border-right-style:solid;
+	border-right-color:#C5D7D7;
+	border-right-width:1.5px;
+		
+}
+
+.tabela-horario {
+	width:260px;
+	display:inline-block;
+	vertical-align: top;
+	margin-left:30px;
+	line-height: 1;
+	border-right-style:solid;
+	border-right-color:#C5D7D7;
+	border-right-width:1.5px;
+	color:#C5D7D7;
+	text-align:center;
+
+}
+
+tr > th {
+
+	padding-bottom:5px;
+	text-transform:uppercase;
+}
+
+
+td:first-child {
+	padding:5px;
+	border-right: 1px solid #C5D7D7;
+}
+
+.copyright {
+	display:inline-block;
+	position:absolute;
+	right:0;
+	margin:0 20px 0 20px;
+	line-height: 2;
+}
