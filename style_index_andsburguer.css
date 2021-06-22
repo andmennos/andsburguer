@@ -9,7 +9,6 @@ header {
 
 .cabecalho {
 	position:relative;
-	margin:0 auto;
 }
 
 h1 {
@@ -17,8 +16,8 @@ h1 {
 	font-family:"Corben", cursive;
 	color:#9AAFAF;
 	font-size:32px;
-	letter-spacing:0.7em;
-	margin:80px 250px 10px;
+	letter-spacing:25px;
+	margin:80px 3em 10px;
 	padding-bottom:20px;
 	border-bottom:1px solid #9AAFAF;
 }
@@ -29,11 +28,10 @@ h2 {
 	font-weight:bold;
 	text-align:center;
 	font-size:70px;
-	letter-spacing:0.4em;
+	letter-spacing:25px;
 	text-transform:uppercase;
 	color:#9AAFAF;
 	margin:50px auto 0;
-
 }
 
 .banner {
@@ -46,22 +44,20 @@ h2 {
 }
 
 .menu {
-	position:relative;
-	text-align:center;
-	width:1220px;
-	margin:100px auto 0;
+	text-align: center;
+	margin:150px auto 0;
+	width:70%;
+	height:90px;
 }
 
 .menu ul {
-	width: 1220px;
-	margin:150px auto 0;
 	padding-top: 30px;
     border-top: 1px dashed #9AAFAF;
 }
 
 .menu li {
 	display:inline-block;
-	margin:0 22px;
+	margin:15px;
 }
 
 .menu a {
@@ -98,9 +94,9 @@ h2 {
 }
 
 .caixa-sobre {
-	width:700px;
-	height:350px;
-	margin: 8% auto;
+	width:60%;
+	height:100%;
+	margin: 80px auto;
 	background-color:rgba(255,255,255,0.1);
 	box-shadow:10px 10px 20px 5px #000000;
 }
@@ -108,10 +104,10 @@ h2 {
 h3 {
 	padding: 10px;
 	font-family:"anton", sans-serif;
-	font-size:22px;
+	font-size:30px;
 	font-weight:bold;
 	text-align:center;
-	color:#668787;
+	color:#9AAAAA;
 	letter-spacing: 1.5px;
 }
 
@@ -121,14 +117,12 @@ h3 {
 	text-align:center;
 	line-height:1.5;
 	color:#C5D7D7;
-
 }
 
 .ingredientes {
-	width:1220px;
+	width:100%;
 	margin:100px auto;
 	text-align:center;
-
 }
 
 .pao, .carne, .queijo {
@@ -141,10 +135,9 @@ h3 {
 	text-align: justify;
 	font-size:18px;
 	line-height:1.2;
-	color:#C5D7D7;
+	color:#9AAAAA;
 	background-color: rgba(255, 255, 255, 0.1);
 	box-shadow: 10px 10px 20px 5px #000000;
-	
 }
 
 
@@ -155,6 +148,7 @@ h3 {
 }
 
 footer {
+	text-align:center;
 	padding:20px;
 	background-color: rgba(255, 255, 255, 0.2);
 	color:#C5D7D7;
@@ -166,27 +160,27 @@ footer {
 
 .endereco {
 	display:inline-block;
+	padding:10px;
 	width:190px;
-	vertical-align: top;
+	text-align:left;
 	line-height: 1.2;
 	border-right-style:solid;
 	border-right-color:#C5D7D7;
-	border-right-width:1.5px;
-		
+	border-right-width:1.5px;	
 }
 
 .tabela-horario {
-	width:260px;
 	display:inline-block;
-	vertical-align: top;
-	margin-left:30px;
+	padding:10px;
+	width:260px;
+	vertical-align:top;
+	margin: 0 50px;
 	line-height: 1;
 	border-right-style:solid;
 	border-right-color:#C5D7D7;
 	border-right-width:1.5px;
 	color:#C5D7D7;
 	text-align:center;
-
 }
 
 tr > th {
@@ -203,8 +197,8 @@ td:first-child {
 
 .copyright {
 	display:inline-block;
-	position:absolute;
-	right:0;
+	padding:10px;
 	margin:0 20px 0 20px;
-	line-height: 2;
+	vertical-align:top;
+	line-height:2;
 }
