@@ -82,15 +82,15 @@ h2 {
 }
 
 #home-menu {
-	padding:3px 66px 3px 66px;
+	padding:3px 74px 3px 74px;
 }
 
 #cardapio-menu {
-	padding:3px 49px 3px 49px;
+	padding:3px 50px 3px 50px;
 }
 
 #contato-menu {
-	padding:3px 52px 3px 52px;
+	padding:3px 56px 3px 56px;
 }
 
 .caixa-sobre {
@@ -201,4 +201,33 @@ td:first-child {
 	margin:0 20px 0 20px;
 	vertical-align:top;
 	line-height:2;
+}
+@media screen and (max-width: 480px) {
+
+	body, .pao, .carne, .queijo, .endereco, .tabela-horario, .copyright, .caixa-sobre {
+		width:auto;
+	}
+
+	.banner {
+		width:100%;
+	}
+
+	h1, h2, .menu {
+		margin:2em auto 0;
+	}
+
+	.principal {
+		margin: 100px 5px;
+	}
+	
+	.endereco, .tabela-horario  {
+		border-right:none;
+		border-top:#C5D7D7 solid 1.5px;
+		text-align: center;;
+		font-size:22px;
+	}
+
+	
+
+
 }
