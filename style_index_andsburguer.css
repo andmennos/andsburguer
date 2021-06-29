@@ -204,7 +204,7 @@ td:first-child {
 }
 @media screen and (max-width: 480px) {
 
-	body, .pao, .carne, .queijo, .copyright, .caixa-sobre, .cabecalho, .ands{
+	body, .cabecalho, .ands, .pao, .carne, .queijo, .caixa-sobre, .copyright{
 		width:auto;
 	}
 
