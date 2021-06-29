@@ -8,60 +8,56 @@ header {
 }
 
 .cabecalho {
-	position:relative;
-	margin:0 auto;
-}
-
-h1 {
-	text-align: center;
-	font-family:"Corben", cursive;
-	color:#9AAFAF;
-	font-size:32px;
-	letter-spacing:0.7em;
-	margin:80px 250px 10px;
+	width:80%;
+	margin:80px auto;
 	padding-bottom:20px;
 	border-bottom:1px solid #9AAFAF;
 }
 
-h2 {
-	width:80%;
+.cabecalho h1 {
+	font-family:"Corben", cursive;
+	text-align: center;
+	color:#9AAFAF;
+	font-size:32px;
+	letter-spacing:25px;
+	
+}
+
+.ands h2{
 	font-family:"lucida sans unicode", cursive;
 	font-weight:bold;
 	text-align:center;
 	font-size:70px;
-	letter-spacing:0.4em;
+	letter-spacing:25px;
 	text-transform:uppercase;
 	color:#9AAFAF;
-	margin:50px auto 0;
-	
+	margin:100px auto 0;
 }
 
 .banner {
+	padding-top:100px;
 	position:absolute;
 	top:10%;
 	left:50%;
-	transform:translateX(-50%);
+	transform:translateX(-51%);
 	z-index:-1;
 	opacity: 0.8;
 }
 
 .menu {
-	position:relative;
-	text-align:center;
-	width:1220px;
-	margin:100px auto 0;
+	text-align: center;
+	margin:130px auto 0;
+	width:70%;
 }
 
 .menu ul {
-	width: 1220px;
-	margin:150px auto 0;
 	padding-top: 30px;
     border-top: 1px dashed #9AAFAF;
 }
 
 .menu li {
 	display:inline-block;
-	margin:0 22px;
+	margin:15px;
 }
 
 .menu a {
@@ -86,58 +82,30 @@ h2 {
 }
 
 #home-menu {
-	padding:3px 66px 3px 66px;
+	padding:3px 74px 3px 74px;
 }
 
 #cardapio-menu {
-	padding:3px 49px 3px 49px;
+	padding:3px 50px 3px 50px;
 }
 
 #contato-menu {
-	padding:3px 52px 3px 52px;
+	padding:3px 56px 3px 56px;
 }
 
-.titulo-mapa {
-	position: relative;
-	bottom:500px;
-	left:90px;
-	font-family:"anton", sans-serif;
-	font-size:30px;
-	font-weight:bold;
-	text-transform:uppercase;
-	color: #445A5A;
-	padding:20px;
+.caixa-contato {
+	width:90%;
+	margin:0 auto -23%;
+	background:#9AAFAF;
 }
 
-.mapa {
-	position:relative;
-	width:940px;	
-	margin:0 auto;
-}
-
-.conteudo-mapa {
-	position:absolute;
-	bottom:200px;
-	width:940px;
-	margin:0 auto;
-	
-}
-
-h3 {
-	display:block;
-	padding:3% 0 3% 20%;
+.caixa-contato h3 {
 	font-family:"anton", sans-serif;
 	font-size:50px;
 	font-weight:bold;
 	text-transform:uppercase;
 	color:#445A5A;
-}
-
-.caixa-contato {
-	width:90%;
-	height:800px;
-	margin:0 auto 25%;
-	background:#9AAFAF;
+	padding:20px 0 20px 180px;
 }
 
 .caixa-contato p {
@@ -158,12 +126,8 @@ h3 {
 	color:green;
 }
 
-.input-padrao {
-	display:block;
-	text-align:center;
-	width:30%;
-	margin:5px auto;
-	background:#C5D7D7;
+form {
+	padding-bottom:30%;
 }
 
 fieldset {
@@ -172,6 +136,14 @@ fieldset {
 
 label {
 	font-weight:bold;
+}
+
+.input-padrao {
+	display:block;
+	width:30%;
+	text-align:center;
+	margin:5px auto;
+	background:#C5D7D7;
 }
 
 .enviar {
@@ -185,7 +157,26 @@ label {
 
 }
 
+.mapa {
+	margin-bottom:20%
+}
+
+.mapa h4 {
+	font-family:"anton", sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	text-transform:uppercase;
+	color: #445A5A;
+	padding:20px 0 20px 230px;	
+}
+
+.conteudo-mapa {
+	width:80%;
+	margin:0 auto;
+}
+
 footer {
+	text-align:center;
 	padding:20px;
 	background-color: rgba(255, 255, 255, 0.2);
 	color:#C5D7D7;
@@ -197,27 +188,27 @@ footer {
 
 .endereco {
 	display:inline-block;
+	padding:10px;
 	width:190px;
-	vertical-align: top;
+	text-align:left;
 	line-height: 1.2;
 	border-right-style:solid;
 	border-right-color:#C5D7D7;
-	border-right-width:1.5px;
-		
+	border-right-width:1.5px;	
 }
 
 .tabela-horario {
-	width:260px;
 	display:inline-block;
-	vertical-align: top;
-	margin-left:30px;
+	padding:10px;
+	width:260px;
+	vertical-align:top;
+	margin: 0 50px;
 	line-height: 1;
 	border-right-style:solid;
 	border-right-color:#C5D7D7;
 	border-right-width:1.5px;
 	color:#C5D7D7;
 	text-align:center;
-
 }
 
 tr > th {
@@ -234,8 +225,68 @@ td:first-child {
 
 .copyright {
 	display:inline-block;
-	position:absolute;
-	right:0;
+	padding:10px;
 	margin:0 20px 0 20px;
-	line-height: 2;
+	vertical-align:top;
+	line-height:2;
+}
+@media screen and (max-width: 480px) {
+
+	body, .cabecalho, .ands, .mapa, .copyright{
+		width:auto;
+	}
+
+	.banner {
+		width:100%;
+	}
+
+	.cabecalho h1 {
+		width:80%;
+		letter-spacing:0;
+		font-size:48px;
+		margin:0 auto;
+	}
+
+	.ands h2{
+		padding-top:50px;
+		letter-spacing:0;
+		font-size:98px;
+	}
+
+	.menu {
+		margin:40px auto 0;
+	}
+
+	.caixa-contato {
+		width:auto;
+		height:55em;
+		margin:0 auto -70%;
+	}
+
+	.caixa-contato h3 {
+		padding:20px;
+	}
+
+	label {
+		font-size:22px;
+	}
+
+	.input-padrao {
+		width:80%;
+		font-size:
+	}
+
+	.mapa h4 {
+		padding: 15px;
+		font-size:50px;
+	}
+	
+	.endereco, .tabela-horario  {
+		width:auto;
+		border-right:none;
+		border-top:#C5D7D7 solid 1.5px;
+		text-align: center;;
+		font-size:22px;
+	}
+
 }
