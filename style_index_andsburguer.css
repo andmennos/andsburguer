@@ -8,22 +8,22 @@ header {
 }
 
 .cabecalho {
-	position:relative;
-}
-
-h1 {
-	text-align: center;
-	font-family:"Corben", cursive;
-	color:#9AAFAF;
-	font-size:32px;
-	letter-spacing:25px;
-	margin:80px 3em 10px;
+	width:80%;
+	margin:80px auto;
 	padding-bottom:20px;
 	border-bottom:1px solid #9AAFAF;
 }
 
-h2 {
-	width:80%;
+.cabecalho h1 {
+	font-family:"Corben", cursive;
+	text-align: center;
+	color:#9AAFAF;
+	font-size:32px;
+	letter-spacing:25px;
+	
+}
+
+.ands h2{
 	font-family:"lucida sans unicode", cursive;
 	font-weight:bold;
 	text-align:center;
@@ -31,23 +31,23 @@ h2 {
 	letter-spacing:25px;
 	text-transform:uppercase;
 	color:#9AAFAF;
-	margin:50px auto 0;
+	margin:100px auto 0;
 }
 
 .banner {
+	padding-top:100px;
 	position:absolute;
 	top:10%;
 	left:50%;
-	transform:translateX(-50%);
+	transform:translateX(-51%);
 	z-index:-1;
 	opacity: 0.8;
 }
 
 .menu {
 	text-align: center;
-	margin:150px auto 0;
+	margin:130px auto 0;
 	width:70%;
-	height:90px;
 }
 
 .menu ul {
@@ -204,16 +204,30 @@ td:first-child {
 }
 @media screen and (max-width: 480px) {
 
-	body, .pao, .carne, .queijo, .endereco, .tabela-horario, .copyright, .caixa-sobre {
+	body, .pao, .carne, .queijo, .copyright, .caixa-sobre, .cabecalho, .ands{
 		width:auto;
 	}
 
 	.banner {
 		width:100%;
+		
 	}
 
-	h1, h2, .menu {
-		margin:2em auto 0;
+	.cabecalho h1 {
+		width:80%;
+		letter-spacing:0;
+		font-size:48px;
+		margin:0 auto;
+	}
+
+	.ands h2{
+		padding-top:50px;
+		letter-spacing:0;
+		font-size:98px;
+	}
+
+	.menu {
+		margin:40px auto 0;
 	}
 
 	.principal {
@@ -221,13 +235,11 @@ td:first-child {
 	}
 	
 	.endereco, .tabela-horario  {
+		width:auto;
 		border-right:none;
 		border-top:#C5D7D7 solid 1.5px;
 		text-align: center;;
 		font-size:22px;
 	}
-
-	
-
 
 }
