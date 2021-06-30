@@ -8,60 +8,56 @@ header {
 }
 
 .cabecalho {
-	position:relative;
-	margin:0 auto;
-}
-
-h1 {
-	text-align: center;
-	font-family:"Corben", cursive;
-	color:#9AAFAF;
-	font-size:32px;
-	letter-spacing:0.7em;
-	margin:80px 250px 10px;
+	width:80%;
+	margin:80px auto;
 	padding-bottom:20px;
 	border-bottom:1px solid #9AAFAF;
 }
 
-h2 {
-	width:80%;
+.cabecalho h1 {
+	font-family:"Corben", cursive;
+	text-align: center;
+	color:#9AAFAF;
+	font-size:32px;
+	letter-spacing:25px;
+	
+}
+
+.ands h2{
 	font-family:"lucida sans unicode", cursive;
 	font-weight:bold;
 	text-align:center;
 	font-size:70px;
-	letter-spacing:0.4em;
+	letter-spacing:25px;
 	text-transform:uppercase;
 	color:#9AAFAF;
-	margin:50px auto 0;
-
+	margin:100px auto 0;
 }
 
 .banner {
+	padding-top:100px;
 	position:absolute;
 	top:10%;
 	left:50%;
-	transform:translateX(-50%);
+	transform:translateX(-51%);
 	z-index:-1;
 	opacity: 0.8;
 }
 
 .menu {
-	position:relative;
-	text-align:center;
-	width:1220px;
-	margin:100px auto 0;
+	text-align: center;
+	margin:130px auto 0;
+	width:70%;
 }
 
 .menu ul {
-	width: 1220px;
-	margin:150px auto 0;
 	padding-top: 30px;
     border-top: 1px dashed #9AAFAF;
 }
 
 .menu li {
 	display:inline-block;
-	margin:0 22px;
+	margin:15px;
 }
 
 .menu a {
@@ -86,20 +82,19 @@ h2 {
 }
 
 #home-menu {
-	padding:3px 66px 3px 66px;
+	padding:3px 74px 3px 74px;
 }
 
 #cardapio-menu {
-	padding:3px 49px 3px 49px;
+	padding:3px 50px 3px 50px;
 }
 
 #contato-menu {
-	padding:3px 52px 3px 52px;
+	padding:3px 56px 3px 56px;
 }
 
 .desc-honesto {
 	width:1000px;
-	height:500px;
 	margin: 100px auto 0;
 }
 
@@ -109,7 +104,7 @@ h2 {
 	float:left;
 }
 
-h3 {
+.desc-honesto h3 {
 	text-align:left;
 	padding-top:35px;
 	color:#668787;
@@ -117,8 +112,6 @@ h3 {
 	font-weight:bold;
 	line-height: 110px;
 	font-family: 'Anton', sans-serif;
-	
-
 }
 
 .desc-honesto p {
@@ -130,6 +123,7 @@ h3 {
 }
 
 footer {
+	text-align:center;
 	padding:20px;
 	background-color: rgba(255, 255, 255, 0.2);
 	color:#C5D7D7;
@@ -141,27 +135,27 @@ footer {
 
 .endereco {
 	display:inline-block;
+	padding:10px;
 	width:190px;
-	vertical-align: top;
+	text-align:left;
 	line-height: 1.2;
 	border-right-style:solid;
 	border-right-color:#C5D7D7;
-	border-right-width:1.5px;
-		
+	border-right-width:1.5px;	
 }
 
 .tabela-horario {
-	width:260px;
 	display:inline-block;
-	vertical-align: top;
-	margin-left:30px;
+	padding:10px;
+	width:260px;
+	vertical-align:top;
+	margin: 0 50px;
 	line-height: 1;
 	border-right-style:solid;
 	border-right-color:#C5D7D7;
 	border-right-width:1.5px;
 	color:#C5D7D7;
 	text-align:center;
-
 }
 
 tr > th {
@@ -178,8 +172,96 @@ td:first-child {
 
 .copyright {
 	display:inline-block;
-	position:absolute;
-	right:0;
+	padding:10px;
 	margin:0 20px 0 20px;
-	line-height: 2;
+	vertical-align:top;
+	line-height:2;
+}
+
+@media screen and (max-width: 768px) {
+	body, .desc-honesto{
+		width:auto;
+	}
+
+	.desc-honesto h3 {
+		width: auto;
+		text-align: center;
+		padding-bottom: 60px;
+	}
+
+	.desc-honesto p {
+		width: auto;
+		font-size: 42px;
+		text-align: center
+	}
+
+	#ft-honesto {
+		width:40%;
+	}
+
+}
+@media screen and (max-width: 480px) {
+
+	body, .cabecalho, .ands, .copyright{
+		width:auto;
+	}
+
+	.banner {
+		width:100%;
+		
+	}
+
+	.cabecalho h1 {
+		width:80%;
+		letter-spacing:0;
+		font-size:48px;
+		margin:0 auto;
+	}
+
+	.ands h2{
+		padding-top:50px;
+		letter-spacing:0;
+		font-size:98px;
+	}
+
+	.menu {
+		margin:40px auto 0;
+	}
+
+	.desc-honesto {
+		width:auto;
+		margin:0;
+	}
+
+	#ft-honesto {
+		float:none;
+		width: 89%;
+		position: relative;
+		top: 13em;
+		margin: 20px;
+	}
+
+	.desc-honesto h3 {
+		width: auto;
+		position: relative;
+		bottom: 4em;
+		font-size: 72px;
+		text-align: center;
+		line-height: 0.9;
+	}
+
+	.desc-honesto p {
+		text-align: center;
+		font-size:33px;
+    	letter-spacing: 3px;
+		padding-bottom:60px;
+	}
+	
+	.endereco, .tabela-horario  {
+		width:auto;
+		border-right:none;
+		border-top:#C5D7D7 solid 1.5px;
+		text-align: center;
+		font-size:22px;
+	}
 }
